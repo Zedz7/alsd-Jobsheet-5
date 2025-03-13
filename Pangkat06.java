@@ -5,10 +5,17 @@ public class Pangkat06 {
         nilai = n;
         pangkat = p;
     }
-    int pangkatBF(int a, int n) {
-        int hasil = 1; 
-        for(int i = 0; i < n; i++) {
-            hasil = hasil * a;
+    //int pangkatBF(int a, int n) {
+        //int hasil = 1; 
+        //for(int i = 0; i < n; i++) {
+            //hasil = hasil * a;
+        //}
+        //return hasil;
+    //}
+    int pangkatBF() {
+        int hasil = 1;
+        for(int i = 0; i < pangkat; i++) {
+            hasil *= nilai;
         }
         return hasil;
     }
